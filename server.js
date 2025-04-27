@@ -18,7 +18,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, '../frontend')));
+// app.use(express.static(path.join(__dirname, '../frontend')));
 
 // Ensure data directory exists
 const dataDir = path.join(__dirname, 'data');

@@ -11,7 +11,7 @@ async function initializeAdmin() {
         const data = readData('users.json');
         
         // Check if admin already exists
-        const adminExists = data.data.some(user => user.role === 'admin');
+        const adminExists = data.map(user => user.role === 'admin');
         if (adminExists) {
             console.log('Admin account already exists');
             return;
