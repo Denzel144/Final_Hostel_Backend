@@ -40,11 +40,11 @@ Object.values(dataFiles).forEach(file => {
 });
 
 // Initialize admin account
-initializeAdmin().then(() => {
-    console.log('Admin initialization completed');
-}).catch(err => {
-    console.error('Error initializing admin:', err);
-});
+// initializeAdmin().then(() => {
+//     console.log('Admin initialization completed');
+// }).catch(err => {
+//     console.error('Error initializing admin:', err);
+// });
 
 // Routes
 app.use('/api/auth', authRoutes);
@@ -54,9 +54,9 @@ app.use('/api/admin', adminRoutes);
 // app.use('/api/student', studentRoutes);
 
 // Serve frontend
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/index.html'));
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, '../frontend/index.html'));
+// });
 
 // Error handling middleware
 app.use((err, req, res, next) => {
