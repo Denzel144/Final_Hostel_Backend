@@ -10,7 +10,7 @@ const { initializeAdmin } = require('./utils/initAdmin');
 const authRoutes = require('./routes/auth');
 const applicationRoutes = require('./routes/applications');
 const roomRoutes = require('./routes/rooms');
-const adminRoutes = require('./routes/admin');
+const adminRoutes = require('./routes/auth');
 const studentRoutes = require('./routes/student');
 
 const app = express();
