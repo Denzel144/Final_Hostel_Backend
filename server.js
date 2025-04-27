@@ -11,7 +11,7 @@ const authRoutes = require('./routes/auth');
 const applicationRoutes = require('./routes/applications');
 const roomRoutes = require('./routes/rooms');
 const adminRoutes = require('./routes/auth');
-const studentRoutes = require('./routes/student');
+// const studentRoutes = require('./routes/student');
 
 const app = express();
 
@@ -51,7 +51,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/applications', applicationRoutes);
 app.use('/api/rooms', roomRoutes);
 app.use('/api/admin', adminRoutes);
-app.use('/api/student', studentRoutes);
+// app.use('/api/student', studentRoutes);
 
 // Serve frontend
 app.get('*', (req, res) => {
